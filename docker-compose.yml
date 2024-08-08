@@ -17,7 +17,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./backend::/usr/src/app
+      - ./backend:/usr/src/app
       - /usr/src/app/node_modules
     command: npm run start:dev
     networks:
